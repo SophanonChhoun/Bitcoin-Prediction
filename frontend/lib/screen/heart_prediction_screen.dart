@@ -58,7 +58,6 @@ class _HeartPredictionScreenState extends State<HeartPredictionScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        buildPriceInputBox(context),
         buildOpenInputBox(context),
         buildHighInputBox(context),
         buildLowInputBox(context),
@@ -106,7 +105,7 @@ class _HeartPredictionScreenState extends State<HeartPredictionScreen> {
             // await Api.get('severity');
             // showResult();
 
-            if (price != "" && high != "" && low != "" && open != "") {
+            if (high != "" && low != "" && open != "") {
               showResult();
             } else {
               ScaffoldMessenger.of(context).showSnackBar(errorSnackbar);
@@ -120,7 +119,6 @@ class _HeartPredictionScreenState extends State<HeartPredictionScreen> {
 
   Future<PredictModel> postRequest() async {
     var data = {
-      "Price": price,
       "High": high,
       "Low": low,
       "Open": open,
