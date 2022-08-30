@@ -21,7 +21,6 @@ def predict():
     data = request.get_json()
     columns = ['Open', 'High', 'Low']
     df = pd.DataFrame(data, index=[0], columns=columns)
-    print(df)
     model = pickle.load(open('./models/model.pkl', 'rb'))
     output = model.predict(df)
     return app.response_class(
