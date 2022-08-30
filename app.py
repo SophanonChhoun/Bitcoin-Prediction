@@ -19,7 +19,7 @@ def index():
 @app.route('/api/predict', methods=['POST'])
 def predict():
     data = request.get_json()
-    columns = ['Price', 'Open', 'High', 'Low']
+    columns = ['Open', 'High', 'Low']
     df = pd.DataFrame(data, index=[0], columns=columns)
     print(df)
     model = pickle.load(open('./models/model.pkl', 'rb'))
