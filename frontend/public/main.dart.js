@@ -62871,7 +62871,7 @@ A.tj.prototype={
 aq(){return new A.yh(B.eu,B.m)}}
 A.yh.prototype={
 a8w(){this.ap(new A.a3V(this))},
-M(a,b){return new A.vu(B.zT,"Disease Symptom Prediction",A.a2R(B.a2).Ih(!0),A.a2R(B.a_).Ih(!0),this.d,!1,null)}}
+M(a,b){return new A.vu(B.zT,"Bitcoin prediction",A.a2R(B.a2).Ih(!0),A.a2R(B.a_).Ih(!0),this.d,!1,null)}}
 A.a3V.prototype={
 $0(){var s=this.a
 s.d=s.d===B.eu?B.L7:B.eu},

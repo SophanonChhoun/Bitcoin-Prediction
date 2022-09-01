@@ -30,7 +30,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Disease Symptom Prediction',
+      title: 'Bitcoin prediction',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(useMaterial3: true),
       darkTheme: ThemeData.dark().copyWith(useMaterial3: true),
