@@ -119,10 +119,11 @@ class _HeartPredictionScreenState extends State<HeartPredictionScreen> {
 
   Future<PredictModel> postRequest() async {
     var data = {
+      "Open": open,
       "High": high,
       "Low": low,
-      "Open": open,
     };
+    print(data);
 
     return await Api.post('/api/predict', data);
   }
@@ -143,7 +144,7 @@ class _HeartPredictionScreenState extends State<HeartPredictionScreen> {
             if (snapshot.hasData) {
               return AlertDialog(
                 title: Text(
-                  "Bitcoin Price in the next 30 days",
+                  "Bitcoin Price Prediction",
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
